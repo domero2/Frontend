@@ -1,0 +1,134 @@
+@media screen and (min-width: 150px) {
+
+body 
+{
+	background-color:white;
+	padding:0;
+	margin:0;
+}
+header
+{
+	color:black;
+	text-align:center;
+  height:60px;
+	
+}
+#gora
+{
+	top:0px;
+	position:sticky;
+	width:100%;
+	height:50px;
+	background-color: black;
+	opacity:0.7;
+ 
+}
+@keyframes anima
+{
+  0% {transform:translateX(0); padding-left:75%;}
+  100% {transform:translateX(-100%); padding-left:75%;}
+}
+ @-webkit-keyframes anima
+{
+  0% {transform:translateX(0); padding-left:75%;}
+  100% {transform:translateX(-100%); padding-left:75%;}
+}
+#gora > p
+{
+  margin:0;
+  white-space:nowrap;
+  color:white;
+  font-size:20px;
+  animation: anima 40s linear infinite;
+  -webkit-animation:anima 40s linear infinite;
+  position:absolute;
+}
+
+.slider
+{
+	width:100%;
+	height:656px;
+	animation:my 30s infinite;
+  -webkit-animation:my 30s infinite; /*Dla przegladarek*/
+  box-shadow:6px 6px 3px black;
+}
+.slide
+{
+  width:100%;
+  min-height: 80px;
+  list-style-type: none;
+  display: block;
+flex-wrap: wrap-reverse;
+}
+
+
+center > img
+{
+  box-shadow:6px 6px 3px grey;
+  width:20%;
+  height:250px;
+  margin-left: auto;
+
+}
+@keyframes my
+       {
+       0% { background:url(img/Niagara2.jpg) no-repeat; }
+       25% { background:url(img/i5.jpg) no-repeat; }
+       50% { background:url(img/i2.jpg) no-repeat; }
+       75% { background:url(img/i6.jpg) no-repeat; }
+       100% { background:url(img/tlo.jpg) no-repeat; }
+      }
+
+      @-webkit-keyframes my /* dla Google Chrome, Safari, Opera 15+ */
+      {
+        
+      0% { background:url(img/Niagara2.jpg) no-repeat;}
+      25% { background:url(img/i5.jpg) no-repeat; }
+      50% { background:url(img/i2.jpg) no-repeat; }
+      75% { background:url(img/i6.jpg) no-repeat; }
+      100% { background:url(img/tlo.jpg) no-repeat; }
+      }
+#content p 
+{
+  width:90%;
+  text-align:justify;
+  margin-left:auto;
+  margin-right:auto;
+}
+.info
+{
+  width:30%;
+  margin:5px;
+  padding:5px;
+  box-shadow:6px 6px 3px grey;
+  text-align: center;
+   margin-left:auto;
+  margin-right:auto;
+
+}
+
+.info > img:hover
+{
+opacity:0.7;
+width:99%;
+min-height:300px;
+}
+#informacje
+{
+  margin-top:5px;
+  width:100%;
+  min-height:60px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  
+}
+footer
+{
+  background-color: grey;
+  opacity: 0.9;
+  color:white;
+  min-height: 50px;
+}
+}
+
+
